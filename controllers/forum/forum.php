@@ -5,7 +5,7 @@ if(!authCheck()){
 }
 
 $forums = $app["database"]->all("forum");
-
+$posts = [];
 foreach($forums as $key => $forum):
 	$posts[$key]["id"] = $forum->id;
 	$posts[$key]["forum"] = $forum->title;

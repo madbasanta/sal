@@ -24,7 +24,7 @@
 		</form>
 	</div>
 	<div class="forums-container mt-3">
-		<?php foreach($posts as $post): ?>
+		<?php if(count($posts)) foreach($posts as $post): ?>
 		<div class="mb-3">
 			<h5><?= $post["forum"] ?></h5>
 			<?php foreach($post["posts"] as $body): ?>
